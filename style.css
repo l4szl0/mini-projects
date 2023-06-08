@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: yellow;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    background-color: blue;
+    flex-grow: 1;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.head h1 {
+    text-transform: uppercase;
+}
+
+.head h1 span {
+    color: yellow;
+}
+
+.content {
+    background-color: green;
+    width: 100%;
+    flex-grow: 9;
+}
