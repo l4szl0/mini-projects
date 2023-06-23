@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
 
 body {
     background: #5689C0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .head {
@@ -16,10 +19,11 @@ body {
     
 }
 
-.head h1 {
-    padding: 25px 20px;
+.head .title {
+    padding: 20px 15px;
     text-transform: uppercase;
     color: #021722;
+    text-decoration: underline;
 }
 
 .projects-container {
@@ -48,21 +52,43 @@ body {
 
 .project-card .images {
     flex-basis: 60%;
-    background-color: yellow;
+    background-color: #fff;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
 }
 
 .project-card .description {
     flex-basis: 40%;
     margin-top: 30px;
     padding: 0 14px;
+    position: relative;
 }
 
-.description h4 {
-    font-size: 30px;
-}
-
-.description p {
-    margin-top: 25px;
+.description .title {
     font-size: 20px;
 }
 
+.description .text {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.description .buttons {
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons a {
+    background: #021722;
+    color: #EAEBED;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
